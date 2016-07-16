@@ -1,0 +1,34 @@
+package com.tutorial.bo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.mockito.Mockito.*;
+import com.tutorial.dao.OrderDAO;
+
+public class OrderBOImplTest {
+	
+	@Mock
+	OrderDAO dao;
+	
+	@Before
+	public void setup(){
+	MockitoAnnotations.initMocks(this);
+	
+		
+		
+	}
+
+	@Test
+	public void placeOrder_Shoul_Create_An_Order() {
+		
+		OrderBOImpl bo=new OrderBOImpl();
+		bo.setDao(dao);	  
+		
+	
+	}
+
+}

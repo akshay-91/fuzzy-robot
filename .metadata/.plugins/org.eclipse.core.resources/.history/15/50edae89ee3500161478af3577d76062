@@ -1,0 +1,22 @@
+package com.tutorial.bo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.tutorial.dao.OrderDAO;
+
+public class OrderBOImplTest {
+
+	private OrderDAO dao;
+
+	@Test
+	public void placeOrder_Shoul_Create_An_Order() {
+		
+		OrderBOImpl bo=new OrderBOImpl();
+		bo.setDao(dao);
+		
+	
+	}
+
+}

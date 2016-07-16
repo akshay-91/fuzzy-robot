@@ -1,0 +1,11 @@
+package com.tutorial.dao;
+
+public interface OrderDAO {
+
+int create(Order order);
+
+
+	
+	
+	
+}
